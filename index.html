@@ -4,42 +4,57 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Mahlwhere</title>
+    <!-- Bootstrap Icons CDN (free, lightweight, modern alternative) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script> <!-- keep for future JS -->
 </head>
 <body>
-    <header>
-        <h1>Mahlwhere</h1>
-        <p>Messing around online - Gaming - Code Experiments</p>
-    </header>
+    
+<header>
+  <div class="profile">
+    <img
+      src="https://cdn.discordapp.com/avatars/800566082448392222/69f2adff0ac2f6c6c396fc8175a39b1a.webp"
+      alt="Mahlwhere's Discord PFP"
+      class="avatar">
+    <div class="header-text">
+      <h1>Mahlwhere</h1>
+      <p>Messing around online - Gaming - Code Experiments</p>
+    </div>
+  </div>
+  <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">
+    <i class="bi bi-moon-stars-fill"></i>
+  </button>
+</header>
 
     <main>
         <section id="about">
             <h2>About Me</h2>
             <p>Hey, I'm Mahlwhere (or Chris). This is my corner of the internet where I dump thoughts, links, or whatever dumbass projects I build while brushing up on web development. Currently raw-dogging HTML/CSS and learning JS.</p>
-            <p>Expect chaose, memes, and maybe something actually useful.</p>
+            <p>Expect chaos, shitposts, and maybe something actually useful.</p>
         </section>
 
         <section id="links">
             <h2>Find Me</h2>
-            <ul>
-                <li><a href="mailto:contact@mahlwhere.com" target="_blank">Email</a></li>
-                <li><a href="https://discord.com/users/800566082448392222" target="_blank">Discord</a></li>
-                <li><a href="https://steamcommunity.com/id/mahlwhere/" target="_blank">Steam</a></li>
-                <li><a href="https://https://myanimelist.net/profile/Mahlwhere" target="_blank">MyAnimeList</a></li>
-                <li><a href="https://x.com/GutlessCutless" target="_blank">X/Twitter</a></li>
-                <li><a href="https://github.com/mahlwhere" target="_blank">GitHub</a></li>
-            </ul>
+            <div class="links-grid">
+                <a href="mailto:contact@mahlwhere.com" class="link-card"><i class="bi bi-envelope-fill"></i> Email</a>
+                <a href="https://discord.com/users/800566082448392222" class="link-card"><i class="bi bi-discord"></i> Discord</a>
+                <a href="https://steamcommunity.com/id/mahlwhere/" class="link-card"><i class="bi bi-steam"></i> Steam</a>
+                <a href="https://myanimelist.net/profile/Mahlwhere" class="link-card"><i class="bi bi-film"></i> MyAnimeList</a>
+                <a href="https://x.com/GutlessCutless" class="link-card"><i class="bi bi-twitter-x"></i> X/Twitter</a>
+                <a href="https://github.com/mahlwhere" class="link-card"><i class="bi bi-github"></i> GitHub</a>
+            </div>
 
             <h2>Communities I'm In</h2>
-            <ul>
-                <li><a href="https://discord.gg/yuG3ECxZuk" target="blank">1 Troop, Red Squadron [ArmA 3 MILSIM]</a></li>
-                <li><a href="https://discord.gg/project-life" target="blank">Project Life Roleplay [South Carolina-based FiveM Server]</a></li>
-            </ul>
+            <div class="links-grid">
+                <a href="https://discord.gg/yuG3ECxZuk" class="link-card"><i class="bi bi-dpad"></i>1 Troop, Red Squadron [A3]</a>
+                <a href="https://discord.gg/project-life" class="link-card"><i class="bi bi-dpad"></i>Project Life Roleplay [FiveM]</a>
+            </div>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2026 Mahlwhere - Built with caffeine, spite, and VSCode.</p>
+        <p>© 2026 Mahlwhere - Built with caffeine, spite, and VSCode.</p>
     </footer>
 </body>
 </html>
